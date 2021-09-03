@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
+    <title>地图显示</title>
+    <style>
+        html,
+        body,
+        #container {
+          width: 500px;
+          height: 400px;
+        }
+
+        .marker {
+            position: absolute;
+            top: -20px;
+            right: -118px;
+            color: #fff;
+            padding: 4px 10px;
+            box-shadow: 1px 1px 1px rgba(10, 10, 10, .2);
+            white-space: nowrap;
+            font-size: 12px;
+            font-family: "";
+            background-color: #25A5F7;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+<div id="container"></div>
+<!-- 加载地图JSAPI脚本 -->
+<script src="https://webapi.amap.com/maps?v=1.4.15&key=	15578455f5045da4449e4f73fc415571"></script>
+<script>
+    var map = new AMap.Map('container', {
+        resizeEnable: true, //是否监控地图容器尺寸变化
+        zoom:16, //初始化地图层级
+        center: [104.096097,30.769778] //初始化地图中心点
+    });
+
+    var marker=new AMap.Marker(
+        {position: [104.096097,30.769778]}
+    );
+    var infoWindow = new AMap.InfoWindow({ //创建信息窗体
+        isCustom: true,  //使用自定义窗体
+        content:'<div style="background-color:#ffffff;text-align:center;padding:10px;color:#0071bc">四川省成都市金牛区天龙大道1166号</br>中铁产业园B区8栋</div>', //信息窗体的内容可以是任意html片段
+        offset: new AMap.Pixel(16, -45)
+    });
+    var onMarkerClick  =  function(e) {
+        infoWindow.open(map, e.target.getPosition());//打开信息窗体
+        //e.target就是被点击的Marker
+    } 
+    map.add(marker);
+    marker.on('click',onMarkerClick);//绑定click事件
+</script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+
+
+.focus img{
+    width: 100%;
+}
+
+.product{
+    margin-top: 100px;
+}
+.product .title h3{
+    color: #0071bc;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+.product .title h4{
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+.product .type{
+    height: 40px;
+    width: auto;
+    /* background-color: pink; */
+}
+.product .type li{
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 20px;
+
+    width: 200px;
+    height: 40px;
+    background-color:white;
+    border-radius: 20px;
+    border: 1px solid rgb(182, 182, 182);
+
+    text-align: center;
+    line-height: 40px;
+
+    /* transition: color 3s; */
+    transition: background-color .3s;
+    cursor: pointer;
+}
+
+.product .type li:hover{
+    background-color: #0071bc;
+    color: white;
+}
+.product .pic ul{
+    margin-top: 30px;
+}
+.product .pic ul li{
+    float: left;
+    height: 400px;
+    width: 23%;
+    margin-right: 1%;
+    cursor: pointer;
+}
+.product .pic ul li img{
+    width: 100%;
+    height: auto;
+}
+.product .pic ul li p{
+    text-align: center;
+    font-size: 13px;
+    color:gray;
+    height: 75px;
+    line-height: 75px;
+    transition:all .3s;
+}
+.product .pic ul li p:hover{
+    color:white;
+    background-color: #0071bc;
+}

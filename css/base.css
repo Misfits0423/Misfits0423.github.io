@@ -1,0 +1,48 @@
+/* 所有标签内外边距清零 */
+*{
+    margin: 0;
+    padding: 0;
+    /* CSS3盒子模型 */
+    box-sizing: border-box;
+}
+/* html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img{
+    margin: 0;
+    padding: 0;
+} */
+
+
+/* em的文字不倾斜 */
+em{
+    font-style: normal;
+}
+
+/* 去掉li的小圆点 */
+li{
+    list-style: none;
+}
+
+
+img{
+    /* 去掉图片带链接后的边框（兼容低版本浏览器） */
+    border:0;
+    /* 去掉图片下方的空隙 */
+    vertical-align: middle;
+}
+
+/* 鼠标经过button时变成手 */
+button{
+    cursor: pointer;
+}
+
+a{
+    /* 给链接设置颜色 */
+    color: gray;
+    /* 去除链接的下划线 */
+    text-decoration: none;
+}
+
+/* 鼠标经过链接时的颜色 */
+a:hover{
+    color:#0071bc;
+}
+

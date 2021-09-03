@@ -1,0 +1,139 @@
+
+/* 版心 */
+.w{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 头部-start */
+.header{
+    height: 80px; 
+}
+.header .logo{
+    float: left;
+    padding: 10px 32px;
+    font-size: 0;
+}
+.header .navi ul{
+    float: right;
+    padding-right: 100px;
+}
+.header .navi ul .title{
+    padding: 30px;
+    line-height: 80px;
+    letter-spacing: 2px;
+    transition: color 0.5s,background-color 0.5s;
+}
+.header .navi ul li div{
+    display: none;
+    position:absolute;
+    top:80px;
+    padding:0 20px;
+    width: 132px;
+    height: auto;
+    background-color: white;
+    font-size :16px;
+    transition:all .3;
+}
+.header .navi ul li div a{
+    display: block;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.3s;
+}
+.header .navi ul li{
+    float: left;
+    position:relative;
+    color:white;
+    transition:all .3s;
+}
+.header .navi ul li:hover .title{
+    background-color: #0071bc;
+    color:white;
+}
+.header .navi ul li:hover div{
+    display: block;
+}
+/* 头部-end */
+
+.footer{
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    background-color: #222222;
+    overflow: hidden;
+}
+.footer .footer_left{
+    float:left;
+    margin-top: 70px;
+    width: 300px;
+    height: 100%;
+    color: white;
+}
+
+.footer .footer_left h4{
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+.footer .footer_left p{
+    letter-spacing: 2px;
+    color: #a3a3a3;
+}
+.footer_left .tel{
+    margin-top: 30px;
+}
+
+.footer_left .tel::before{
+    content: "\e9b2";
+    font-family: 'icomoon';
+}
+
+.footer_left .address::before{
+    content: "\e9a9";
+    font-family: 'icomoon';
+}
+.footer_left .info{
+    margin-top: 10px;
+    margin-left: 26px;
+}
+
+.footer_right{
+    float: left;
+    margin-top: 100px;
+    margin-left: 111px;
+}
+.footer_right dl{
+    float: left;
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-left: 40px;
+}
+.footer_right dl dt{
+    margin-bottom: 10px;
+}
+.footer_right dl dt a{
+    color: white;
+}
+.footer_right dl dd a{
+    transition:color .3s;
+}
+.footer_right dl dd a:hover{
+    color:white;
+}
+
+.footer_content{
+    overflow: hidden;
+    padding-bottom: 30px;
+    border-bottom: 1px solid gray;
+}
+.footer .beian p{
+    font-size: 12px;
+    overflow: hidden;
+    color: gray;
+    text-align: center;
+    margin-bottom: 10px;
+}

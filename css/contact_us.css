@@ -1,0 +1,112 @@
+ .focus img{
+     width: 100%;
+     height: auto;
+ }
+ .contact{
+     margin-top: 100px;
+ }
+ #container {
+     margin-top: 20px;
+    width: 500px;
+    height: 400px;
+    float:left;
+}
+
+.marker {
+    position: absolute;
+    top: -20px;
+    right: -118px;
+    color: #fff;
+    padding: 4px 10px;
+    box-shadow: 1px 1px 1px rgba(10, 10, 10, .2);
+    white-space: nowrap;
+    font-size: 12px;
+    font-family: "";
+    background-color: #25A5F7;
+    border-radius: 3px;
+}
+.contact .title h2{
+    font-size: 38px;
+    letter-spacing: 2px;
+    color:#0074bc;
+    font-weight: 600;
+}
+.contact .title h3{
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+.contact .content{
+    overflow: hidden;
+    height: auto;
+}
+.contact .info{
+    float:right;
+    margin-top: 70px;
+    width: 600px;
+    height: 400px;
+}
+.contact .info h4{
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color:#0074bc
+}
+.contact .info .contact_person::before{
+    content: '\ea00';
+    font-family: 'icomoon';
+}
+.contact .info .tel::before{
+    content: '\e9b2';
+    font-family: 'icomoon';
+}
+.contact .info .wechat::before{
+    content: '\e999';
+    font-family: 'icomoon';
+}
+.contact .info .address::before{
+    content: '\e994';
+    font-family: 'icomoon';
+}
+.contact .info p{
+    text-indent: 2em;
+    margin-bottom: 10px;
+    color: gray;
+    letter-spacing: 1px;
+}
+.contact .info .qrcode{
+    margin-left: 90px;
+    width: 90px;
+}
+.message .title{
+    position: relative;
+    text-align: center;
+}
+.message .title h3{
+    color:gray;
+    font-style: italic;
+    font-size: 40px;
+    opacity: 0.1;
+}
+.message .title h4{
+    position: absolute;
+    top:30px;
+    left:540px;
+    color:#0074bc;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+.message .content{
+    overflow: hidden;
+    margin-top: 50px;
+
+}
+.message form{
+    float: left;
+} 
+.message form .words{
+    height: 200px;
+}
+.message .content img{
+    float: right;
+    width: 40%;
+} 

@@ -1,0 +1,220 @@
+/* 焦点图 */
+.focus a img{
+    max-width: 100%;
+}
+
+.profile{
+    /* position: relative; */
+margin-top: 100px;
+height: auto;
+    /* background-color: cadetblue; */
+    overflow: hidden;
+}
+
+.profile .article{
+    /* position:absolute; */
+    float:left;
+    position: relative;
+    width:50%;
+    height: auto;
+    float:left;
+    padding: 30px;
+}
+.profile  .profile_title{
+    padding: 20px;
+    /* font-weight: normal; */
+    color: #0071bc;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+.profile .article p{
+
+    padding:10px;
+    text-indent: 2em;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color:gray;
+}
+.profile .article .readmore{
+    position:absolute;
+    /* left: 500px; */
+    right: 30px;
+    /* float: right; */
+    /* display: inline-block; */
+    height: 40px;
+    width: 80px;
+    /* border:2px solid #0071bc; */
+    /* border-radius: 20px; */
+    background-color: #0071bc;
+    text-align: center;
+    transition: all .5s;
+
+}
+.profile .article .readmore:hover{
+    background-color: #005791;
+    /* border: 2px solid #0071bc; */
+    /* color: #0071bc; */
+}
+/* .profile .article .readmore:hover > a{
+    color: #0071bc;
+} */
+.profile .article .readmore a{
+    /* position:absolute;
+    left:10px;
+    top: 10px; */
+    color:white;
+    line-height: 37px;
+    font-size: 13px;
+
+}
+.profile .article .readmore a::after{
+    content: "\e930";
+    font-family: "icomoon";
+}
+.profile .company_photo{
+    /* position: absolute; */
+    width: 50%;
+    float:left;
+}
+.profile .company_photo img{
+    max-width: 100%;
+}
+
+.product{
+    margin-top: 100px;
+    overflow: hidden;
+}
+.product .product_title h3{
+    font-weight: bold;
+    font-size: 28px;
+    color: #0071bc;
+    /* text-align: center; */
+    letter-spacing: 5px;
+}
+
+.product .product_title h4{
+    font-size: 24px;
+    font-weight: normal;
+}
+.product_class{
+    margin-top: 20px;
+}
+
+.product .product_class  ul li{
+    display: inline-block;
+    width: 390px;
+    height: 600px;
+    background-color:#f4f4f4;
+}
+.product .product_class  ul li a{
+    text-align: center;
+}
+.product .product_class  ul li a img{
+    width: 100%;
+    height: auto;
+}
+.product .product_class ul li a p{
+    line-height: 78px;
+}
+
+.news{
+    margin-top: 100px;
+}
+.news h3{
+    text-align: center;
+    color: #0071bc;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+.news .pic{
+    /* display: inline-block; */
+    float: left;
+    width: 550px;
+    height: 550px;
+    /* background-color:pink; */
+}
+.news .pic img{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+.news .list{
+    float:right;
+    width: 600px;
+    height: 500px;
+    /* background-color: gray; */
+}
+
+.news .list ul{
+    /* padding-left: 30px; */
+    width: 100%;
+    height: 75%;
+    /* background-color: #0071bc */
+}
+.news .list ul li{
+    height: 33%;
+    position: relative;
+    padding: 15px;
+    /* margin-bottom: 15px; */
+    transition: background-color .5s;
+}
+/*.news .list ul li div{
+    position:absolute;
+    width: 20px;
+    height: 20px;
+    top: 18px;
+    left: -52px;
+    /* background-color: pink; */
+    /*color: #0071bc;
+    font-size: 50px;
+    font-weight: bold;
+}*/
+
+.news .list ul li:hover{
+    background-color:#0071bc;
+    /* color:white; */
+}
+.news .list ul li:hover a{
+    color:white;
+}
+.news .list ul li:hover h4{
+    color:white;
+}
+
+.news .list ul li a h4{
+    color:#0071bc;
+}
+
+.news .list ul li a p{
+    margin-top: 4px;
+    text-indent: 2em;
+    font-size: 13px;
+}
+.news .list ul li a i{
+    font-size: 12px;
+    float: right;
+}
+.news .list .more{
+    display: block;
+    float: right;
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+    background-color: #0071bc;;
+
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    transition: background-color 0.3s;
+}
+.news .list .more:hover{
+    background-color:  #005791;
+}
+.news .list .more::after{
+    content: "\e930";
+    font-family: "icomoon";
+}
